@@ -1,0 +1,11 @@
+.PostList__trending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.PostList__latest {
+    width: 60%;
+    margin: auto;
+}

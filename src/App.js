@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Filters from './features/filters/Filters';
 import SearchBar from './features/searchbar/SearchBar';
+import PostList from './components/postlist/PostList';
 
 function App() {
   return (
@@ -12,6 +13,20 @@ function App() {
         <Filters />
       </header>
       <SearchBar />
+      <section className="App__trending">
+        <div className="divider__container">
+          <hr />
+          <div className="section__divider">Trending</div>
+        </div>
+        <PostList isTrending={true} />
+      </section>
+      <section className="App__latest">
+        <div className="divider__container">
+          <hr />
+          <div className="section__divider">Latest</div>
+        </div>
+        <PostList isTrending={false} />
+      </section>
     </div>
   );
 }

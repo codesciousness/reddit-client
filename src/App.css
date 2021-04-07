@@ -12,12 +12,13 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .App {
   min-height: 100vh;
-  background: lightgray;
+  background: whitesmoke;
+  padding-bottom: 3rem;
 }
 
 /* Title */
@@ -34,7 +35,6 @@ body {
 
 .App__header {
   min-height: 70vh;
-  font-size: 1rem;
   text-align: center;
   color: white;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(./resources/images/ben-wicks-Ia-qPL-HQdA-unsplash.jpg);
@@ -43,4 +43,33 @@ body {
   border-bottom: 3px solid gray;
   border-image: linear-gradient(to right, rgb(255, 2, 108), orange, yellow, green, blue, purple) 1;
   position: relative;
+}
+
+.App__trending, .App__latest {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.divider__container {
+  width: 90%;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.divider__container hr {
+  border-bottom: 1px solid black;
+}
+
+.section__divider {
+  display: inline-block;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background: linear-gradient(to right, rgb(255, 2, 108), purple);
+  padding: 0.25rem;
 }

@@ -1,0 +1,134 @@
+.Post__trending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    margin: 2rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.Post__trending:hover {
+    transform: scale(1.2);
+}
+
+.Post__trending::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.Post__trending:hover::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+}
+
+.Post__trending__image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.Post__trending__content {
+    color: white;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.Post__trending__flair {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.Post__trending__title {
+    font-size: 1.25rem;
+}
+
+.Post__latest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    margin: 2rem auto;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.Post__latest:hover {
+    background: white;
+    border-radius: 0;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    border-image: linear-gradient(to right, rgb(255, 2, 108), orange, yellow, green, blue, purple) 1;
+}
+
+.Post__latest__image {
+    height: 140px;
+    width: 140px;
+    border-radius: 20px;
+    position: absolute;
+    left: -64px;
+    cursor: pointer;
+    transition: all 0.3s linear 0.1s;
+}
+
+.Post__latest__image:hover {
+    left: -70px;
+}
+
+.Post__latest__content {
+    width: 75%;
+    padding: 1rem;
+}
+
+.Post__latest__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.Post__latest__button {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(to right, rgb(255, 2, 108), orange, yellow, green, blue, purple);
+    background-size: 300% 100%;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(242, 97, 170, 0.6);
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.Post__latest__button:hover {
+    background-position: 100% 0;
+}
+
+.Post__latest__button:hover .Post__latest__icon {
+    display: inline;
+}
+
+.Post__latest__icon {
+    display: none;
+}
+
+.Post__latest__detail span {
+    margin: 0.5rem 2rem;
+}
+
+.Post__latest__comments {
+    cursor: pointer;
+}

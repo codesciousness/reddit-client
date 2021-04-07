@@ -28,6 +28,7 @@
 
 .Filters__button {
     color: white;
+    font-size: 1rem;
     font-weight: bold;
     background: transparent;
     border: 1px solid white;
