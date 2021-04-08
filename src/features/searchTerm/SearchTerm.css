@@ -1,4 +1,4 @@
-.SearchBar {
+.SearchTerm {
     display: flex;
     background: white;
     border: 1px solid black;
@@ -7,7 +7,7 @@
     margin: 3rem auto;
 }
 
-.SearchBar__input {
+.SearchTerm__input {
     width: 100%;
     background: none;
     border-radius: 50px;
@@ -15,6 +15,6 @@
     outline: none;
 }
 
-.SearchBar__icon {
+.SearchTerm__icon {
     padding: 0.75rem 1rem;
 }

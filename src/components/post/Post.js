@@ -1,6 +1,6 @@
 import React from 'react';
 import './Post.css';
-import PostTime from '../../components/posttime/PostTime';
+import PostTime from '../postTime/PostTime';
 
 const flairs = ['Astronomy', 'Biology', 'Chemistry', 'Computer Science', 'Engineering', 'Environment', 'Geology', 'Health', 'Mathematics', 'Medicine', 'Nanoscience', 'Neuroscience', 'Physics'];
 
@@ -47,10 +47,11 @@ const Post = ({ isTrending }) => {
             <section className="Post__latest">
                 <img className="Post__latest__image" src={article.src += `&sig=${Math.random()}`} alt=""/>
                 <div className="Post__latest__content">
+                    <p className="Post__latest__flair">{article.flair}</p>
                     <h2 className="Post__latest__title">{longTitle}</h2>
                     <button className="Post__latest__button">Read more <i class="fas fa-angle-double-right Post__latest__icon"></i></button>
                     <p className="Post__latest__detail">
-                        <span className="Post__latest__author">Posted by: {article.author}</span>
+                        <span className="Post__latest__author">Posted by <strong>{article.author}</strong></span>
                         <PostTime time={article.created} />
                         <span className="Post__latest__comments"><i class="far fa-comment-alt"></i> {article.commentNum}</span>
                     </p>

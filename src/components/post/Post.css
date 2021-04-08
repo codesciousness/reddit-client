@@ -6,6 +6,7 @@
     height: 200px;
     background: white;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(145, 145, 165, 0.6);
     position: relative;
     margin: 2rem;
     cursor: pointer;
@@ -60,6 +61,7 @@
     align-items: center;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(145, 145, 165, 0.6);
     margin: 2rem auto;
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -77,6 +79,7 @@
     height: 140px;
     width: 140px;
     border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(145, 145, 165, 0.6);
     position: absolute;
     left: -64px;
     cursor: pointer;
@@ -90,6 +93,16 @@
 .Post__latest__content {
     width: 75%;
     padding: 1rem;
+}
+
+.Post__latest__flair {
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: lightgray;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    margin: 0.5rem;
 }
 
 .Post__latest__title {
@@ -125,10 +138,23 @@
     display: none;
 }
 
+.Post__latest__detail {
+    margin-top: 0.5rem;
+}
+
 .Post__latest__detail span {
     margin: 0.5rem 2rem;
 }
 
+.Post__latest__author strong {
+    font-weight: bold;
+    color: steelblue;
+}
+
 .Post__latest__comments {
     cursor: pointer;
+}
+
+.Post__latest__comments:hover {
+    color: steelblue;
 }

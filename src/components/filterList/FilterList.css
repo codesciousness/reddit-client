@@ -1,0 +1,21 @@
+.FilterList {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.FilterList__prompt {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.FilterList__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+}

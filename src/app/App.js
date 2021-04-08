@@ -1,29 +1,30 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import Filters from './features/filters/Filters';
-import SearchBar from './features/searchbar/SearchBar';
-import PostList from './components/postlist/PostList';
+import FilterList from '../components/filterList/FilterList';
+import SearchTerm from '../features/searchTerm/SearchTerm';
+import PostList from '../components/postList/PostList';
 
 function App() {
   return (
     <div className="App">
       <header className="App__header">
         <h1 className="App__title">Reddit Science</h1>
-        <Filters />
+        <h2 className="App__subtitle">Your Daily Dose of Science</h2>
+        <FilterList />
       </header>
-      <SearchBar />
+      <SearchTerm />
       <section className="App__trending">
-        <div className="divider__container">
+        <div className="App__divider__container">
           <hr />
-          <div className="section__divider">Trending</div>
+          <div className="App__divider">Trending</div>
         </div>
         <PostList isTrending={true} />
       </section>
       <section className="App__latest">
-        <div className="divider__container">
+        <div className="App__divider__container">
           <hr />
-          <div className="section__divider">Latest</div>
+          <div className="App__divider">Latest</div>
         </div>
         <PostList isTrending={false} />
       </section>

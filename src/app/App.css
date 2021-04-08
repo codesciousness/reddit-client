@@ -21,7 +21,7 @@ body {
   padding-bottom: 3rem;
 }
 
-/* Title */
+/* Titles */
 
 .App__title {
   height: 7vh;
@@ -31,13 +31,19 @@ body {
   opacity: 0.7;
 }
 
+.App__subtitle {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 3rem auto 2rem auto;
+}
+
 /* Header */
 
 .App__header {
   min-height: 70vh;
   text-align: center;
   color: white;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(./resources/images/ben-wicks-Ia-qPL-HQdA-unsplash.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(../resources/images/ben-wicks-Ia-qPL-HQdA-unsplash.jpg);
   background-size: cover;
   border-top: 3px solid gray;
   border-bottom: 3px solid gray;
@@ -50,17 +56,17 @@ body {
   margin: 3rem auto;
 }
 
-.divider__container {
+.App__divider__container {
   width: 90%;
   margin: 2rem auto;
   position: relative;
 }
 
-.divider__container hr {
+.App__divider__container hr {
   border-bottom: 1px solid black;
 }
 
-.section__divider {
+.App__divider {
   display: inline-block;
   position: absolute;
   top: -50%;

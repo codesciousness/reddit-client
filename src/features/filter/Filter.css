@@ -1,0 +1,32 @@
+.Filter__button {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.Filter__button:hover {
+    color: black;
+    background: white;
+}
+
+.Filter__button__active {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    background: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './PostList.css';
-import Post from '../../features/post/Post';
+import Post from '../post/Post';
 
 const PostList = ({ isTrending }) => {
     if (isTrending) {
