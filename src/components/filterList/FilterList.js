@@ -2,7 +2,7 @@ import React from 'react';
 import './FilterList.css';
 import Filter from '../../features/filter/Filter';
 
-const flairs = ['Astronomy', 'Biology', 'Chemistry', 'Computer Science', 'Engineering', 'Environment', 'Geology', 'Health', 'Mathematics', 'Medicine', 'Nanoscience', 'Neuroscience', 'Physics'];
+const flairs = ['Animal Science', 'Anthropology', 'Astronomy', 'Biology', 'Cancer', 'Chemistry', 'Computer Science', 'Earth Science', 'Economics', 'Engineering', 'Environment', 'Epidemiology', 'Geology', 'Health', 'Mathematics', 'Medicine', 'Nanoscience', 'Neuroscience', 'Paleontology', 'Physics', 'Psychology', 'Social Science'];
 
 const FilterList = () => {
     return (

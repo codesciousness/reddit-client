@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  font-family: 'Asap', sans-serif;
   font-size: 1rem;
 }
 
@@ -21,14 +22,25 @@ body {
   padding-bottom: 3rem;
 }
 
-/* Titles */
-
-.App__title {
+.App__navbar {
   height: 7vh;
   line-height: 7vh;
   font-size: 2rem;
   background: black;
   opacity: 0.7;
+  position: relative;
+}
+
+.App__navbar__icon {
+  position: absolute;
+  left: 0;
+  padding: 0.75rem 0.5rem 0.5rem 1rem;
+}
+
+/* Titles */
+
+.App__title {
+  font-size: 2rem;
 }
 
 .App__subtitle {

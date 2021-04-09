@@ -4,12 +4,16 @@ import './App.css';
 import FilterList from '../components/filterList/FilterList';
 import SearchTerm from '../features/searchTerm/SearchTerm';
 import PostList from '../components/postList/PostList';
+import CommentList from '../components/commentList/CommentList';
 
 function App() {
   return (
     <div className="App">
       <header className="App__header">
-        <h1 className="App__title">Reddit Science</h1>
+        <nav className="App__navbar">
+          <i className="fas fa-home App__navbar__icon"></i>
+          <h1 className="App__title">Reddit Science</h1>
+        </nav>
         <h2 className="App__subtitle">Your Daily Dose of Science</h2>
         <FilterList />
       </header>
@@ -27,6 +31,7 @@ function App() {
           <div className="App__divider">Latest</div>
         </div>
         <PostList isTrending={false} />
+        <CommentList />
       </section>
     </div>
   );

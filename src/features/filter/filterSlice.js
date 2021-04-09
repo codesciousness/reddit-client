@@ -6,9 +6,10 @@ const filterSlice = createSlice({
     reducers: {
         setFilter: (state, action) => {
             let filter = action.payload;
-            if (filter === 'ComputerScience') {
-                filter = 'Computer Science';
-            }
+            if (filter === 'AnimalScience') filter = 'Animal Science';
+            else if (filter === 'ComputerScience') filter = 'Computer Science';
+            else if (filter === 'EarthScience') filter = 'Earth Science';
+            else if (filter === 'SocialScience') filter = 'Social Science';
             state = filter;
             return state;
         },
