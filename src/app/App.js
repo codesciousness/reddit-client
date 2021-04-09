@@ -3,8 +3,8 @@ import React from 'react';
 import './App.css';
 import FilterList from '../components/filterList/FilterList';
 import SearchTerm from '../features/searchTerm/SearchTerm';
-import PostList from '../components/postList/PostList';
-import CommentList from '../components/commentList/CommentList';
+import Posts from '../features/posts/Posts';
+import PostDetail from '../components/postDetail/PostDetail';
 
 function App() {
   return (
@@ -23,15 +23,15 @@ function App() {
           <hr />
           <div className="App__divider">Trending</div>
         </div>
-        <PostList isTrending={true} />
+        <Posts isTrending={true} />
       </section>
       <section className="App__latest">
         <div className="App__divider__container">
           <hr />
           <div className="App__divider">Latest</div>
         </div>
-        <PostList isTrending={false} />
-        <CommentList />
+        <Posts isTrending={false} />
+        <PostDetail />
       </section>
     </div>
   );

@@ -1,0 +1,19 @@
+.Posts__trending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Posts__trending__error {
+    margin: 2rem 0;
+}
+
+.Posts__latest {
+    width: 60%;
+    margin: 4rem auto auto auto;
+}
+
+.Posts__latest__error {
+    margin: 2rem 0;
+}
