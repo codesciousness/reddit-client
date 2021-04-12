@@ -32,15 +32,19 @@ body {
 }
 
 .App__navbar__icon {
+  display: inline-block;
   position: absolute;
   left: 0;
   padding: 0.75rem 0.5rem 0.5rem 1rem;
+  cursor: pointer;
 }
 
 /* Titles */
 
 .App__title {
+  display: inline-block;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .App__subtitle {

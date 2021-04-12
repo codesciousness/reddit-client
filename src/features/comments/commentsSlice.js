@@ -7,6 +7,7 @@ async (postId) => {
     return json[1].data.children.map(obj => ({
         id: obj.data.id,
         author: obj.data.author,
+        created: obj.data.created_utc,
         body: obj.data.body,
         ups: obj.data.ups,
         replies: obj.data.replies

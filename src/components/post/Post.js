@@ -10,7 +10,7 @@ const Post = ({ post, isTrending }) => {
     const words = post.title.split(' ');
     let shortTitle = [];
     for (let i = 0; i <= words.length; i++) {
-        if (words[i] && i < 8) {
+        if (words[i] && i < 7) {
             shortTitle.push(words[i]);
         }
     }
