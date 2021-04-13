@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import './Comments.css';
 import Comment from '../../components/comment/Comment';
 import Loader from '../../components/loader/Loader';
@@ -31,7 +32,8 @@ const Comments = () => {
         return (
             <section className="Comments">
                 <h3 className="Comments__title">Comments</h3>
-                <p className="Comments__error">Request failed! Please reload.</p>
+                <p className="Comments__error">Error: Request failed! Please try again. ¯\_(ツ)_/¯</p>
+                <p className="Comments__error">Or Return to <Link to='/' className="Comments__link"><i className="fas fa-home Comments__icon"></i> Home</Link></p>
             </section>
         );
     }

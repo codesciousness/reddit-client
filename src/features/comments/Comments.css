@@ -5,3 +5,12 @@
 .Comments__error {
     margin: 2rem 0;
 }
+
+.Comments__link, .Comments__link:hover, .Comments__link:visited {
+    color: steelblue;
+    text-decoration: none;
+}
+
+.Comments__icon {
+    font-size: 1.5rem;
+}

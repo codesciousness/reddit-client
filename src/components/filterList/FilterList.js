@@ -8,11 +8,11 @@ const FilterList = () => {
     return (
         <section className="FilterList">
             <p className="FilterList__prompt">What interests you?</p>
-            <div className="FilterList__container">
+            <ul className="FilterList__container">
                 {flairs.map(flair => {
-                    return <Filter flair={flair} />
+                    return <li key={flair.split(' ')[0].toLowerCase()}><Filter flair={flair} /></li>
                 })}
-            </div>
+            </ul>
         </section>
     );
 }

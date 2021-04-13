@@ -41,13 +41,15 @@ const Posts = ({ isTrending }) => {
         if (loadTrendingPostsError) {
             return (
                 <section className="Posts__trending">
-                    <p className="Posts__trending__error">Request failed! Please reload.</p>
+                    <p className="Posts__trending__error">Error: Request failed! Please try again. ¯\_(ツ)_/¯</p>
                 </section>
             );
         }
         return (
             <section className="Posts__trending">
-                {trendingPosts.map(post => <Post post={post} isTrending={true} />)}
+                <ul>
+                    {trendingPosts.map(post => <li key={post.id}><Post post={post} isTrending={true} /></li>)}
+                </ul>
             </section>
         );
     }
@@ -62,13 +64,15 @@ const Posts = ({ isTrending }) => {
         if (loadLatestPostsError) {
             return (
                 <section className="Posts__latest">
-                    <p className="Posts__latest__error">Request failed! Please reload.</p>
+                    <p className="Posts__latest__error">Error: Request failed! Please try again. ¯\_(ツ)_/¯</p>
                 </section> 
             );
         }
         return (
             <section className="Posts__latest">
-                {latestPosts.map(post => <Post post={post} isTrending={false} />)}
+                <ul>
+                    {latestPosts.map(post => <li key={post.id}><Post post={post} isTrending={false} /></li>)}
+                </ul>
             </section> 
         );
     }

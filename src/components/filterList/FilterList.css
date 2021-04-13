@@ -20,3 +20,7 @@
     width: 75%;
     margin: auto;
 }
+
+.FilterList li {
+    list-style: none;
+}

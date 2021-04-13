@@ -1,4 +1,4 @@
-.Posts__trending {
+.Posts__trending ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +9,10 @@
     margin: 2rem 0;
 }
 
+.Posts__trending li {
+    list-style: none;
+}
+
 .Posts__latest {
     width: 60%;
     margin: 4rem auto auto auto;
@@ -16,4 +20,8 @@
 
 .Posts__latest__error {
     margin: 2rem 0;
+}
+
+.Posts__latest li {
+    list-style: none;
 }
