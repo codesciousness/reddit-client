@@ -16,13 +16,31 @@ body {
   font-size: 1rem;
 }
 
+/* App */
+
 .App {
   min-height: 100vh;
   background: whitesmoke;
   padding-bottom: 3rem;
 }
 
+.App__header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(../resources/images/ben-wicks-Ia-qPL-HQdA-unsplash.jpg);
+  background-size: cover;
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+  border-image: linear-gradient(to right, rgb(255, 2, 108), orange, yellow, green, blue, purple) 1;
+  padding-bottom: 3rem;
+}
+
 .App__navbar {
+  width: 100%;
   height: 7vh;
   line-height: 7vh;
   font-size: 2rem;
@@ -39,59 +57,17 @@ body {
   padding: 0.75rem 0.5rem 0.5rem 1rem;
 }
 
-/* Titles */
-
 .App__title {
   color: white;
   display: inline-block;
   font-size: 2rem;
 }
 
-.App__subtitle {
-  font-size: 2rem;
-  font-weight: normal;
-  margin: 3rem auto 2rem auto;
-}
+/* Media Queries */
 
-/* Header */
+@media only screen and (max-width: 700px) {
 
-.App__header {
-  min-height: 70vh;
-  text-align: center;
-  color: white;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(../resources/images/ben-wicks-Ia-qPL-HQdA-unsplash.jpg);
-  background-size: cover;
-  border-top: 3px solid gray;
-  border-bottom: 3px solid gray;
-  border-image: linear-gradient(to right, rgb(255, 2, 108), orange, yellow, green, blue, purple) 1;
-  position: relative;
-}
-
-.App__trending, .App__latest {
-  width: 80%;
-  margin: 3rem auto;
-}
-
-.App__divider__container {
-  width: 90%;
-  margin: 2rem auto;
-  position: relative;
-}
-
-.App__divider__container hr {
-  border-bottom: 1px solid black;
-}
-
-.App__divider {
-  display: inline-block;
-  position: absolute;
-  top: -50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  background: linear-gradient(to right, rgb(255, 2, 108), purple);
-  padding: 0.25rem;
+  .App__navbar__icon {
+    display: none;
+  }
 }

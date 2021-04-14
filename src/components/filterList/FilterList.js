@@ -7,6 +7,7 @@ const flairs = ['Animal Science', 'Anthropology', 'Astronomy', 'Biology', 'Cance
 const FilterList = () => {
     return (
         <section className="FilterList">
+            <h2 className="FilterList__title">Your Daily Dose of Science</h2>
             <p className="FilterList__prompt">What interests you?</p>
             <ul className="FilterList__container">
                 {flairs.map(flair => {

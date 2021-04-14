@@ -18,3 +18,12 @@
 .SearchTerm__icon {
     padding: 0.75rem 1rem;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 1000px) {
+
+    .SearchTerm {
+        width: 80%;
+    }
+}

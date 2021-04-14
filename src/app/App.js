@@ -15,7 +15,6 @@ function App() {
             <Link to='/'><i className="fas fa-home App__navbar__icon"></i></Link>
             <Link to='/'><h1 className="App__title">Reddit Science</h1></Link>
           </nav>
-          <h2 className="App__subtitle">Your Daily Dose of Science</h2>
           <FilterList />
         </header>
         <Switch>

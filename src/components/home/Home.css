@@ -1,0 +1,29 @@
+.Home__trending, .Home__latest {
+    width: 95%;
+    max-width: 1800px;
+    margin: 3rem auto;
+}
+
+.Home__divider__container {
+    width: 90%;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.Home__divider__container hr {
+    border-bottom: 1px solid black;
+}
+
+.Home__divider {
+    display: inline-block;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(to right, rgb(255, 2, 108), purple);
+    padding: 0.25rem;
+}

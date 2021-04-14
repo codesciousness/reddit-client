@@ -6,7 +6,8 @@
 }
 
 .Posts__trending__error {
-    margin: 2rem 0;
+    width: 75%;
+    margin: 4rem auto auto auto;
 }
 
 .Posts__trending li {
@@ -14,7 +15,7 @@
 }
 
 .Posts__latest {
-    width: 60%;
+    width: 75%;
     margin: 4rem auto auto auto;
 }
 
@@ -24,4 +25,12 @@
 
 .Posts__latest li {
     list-style: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+    .Posts__latest, .Posts__trending__error {
+        padding-top: 0.05rem;
+    }
 }

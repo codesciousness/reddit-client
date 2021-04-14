@@ -41,6 +41,7 @@
 .Post__trending__content {
     padding: 1rem;
     z-index: 2;
+    overflow: hidden;
 }
 
 .Post__trending__flair {
@@ -57,10 +58,6 @@
 .Post__trending__link {
     color: white;
     text-decoration: none;
-}
-
-.Post__trending__link:hover, .Post__trending__link:visited {
-    color: rgb(230, 230, 230);
 }
 
 .Post__trending__title {
@@ -104,6 +101,7 @@
 .Post__latest__content {
     width: 75%;
     padding: 1rem;
+    overflow: hidden;
 }
 
 .Post__latest__flair {
@@ -172,4 +170,46 @@
 
 .Post__latest__comments:hover {
     color: steelblue;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+
+    .Post__latest {
+        margin-top: 6rem;
+    }
+
+    .Post__latest__image {
+        top: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .Post__latest__image:hover {
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .Post__latest__content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 95%;
+        margin-top: 3rem;
+    }
+
+    .Post__latest__detail {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Post__latest__detail span {
+        margin: 0.25rem auto;
+    }
 }
