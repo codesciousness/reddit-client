@@ -34,3 +34,9 @@
         padding-top: 0.05rem;
     }
 }
+
+@media only screen and (max-width: 550px) {
+    .Posts__latest, .Posts__trending__error {
+        width: 90%;
+    }
+}

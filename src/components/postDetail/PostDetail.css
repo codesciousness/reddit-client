@@ -2,3 +2,11 @@
     width: 60%;
     margin: auto;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 700px) {
+    .PostDetail {
+        width: 90%;
+    }
+}

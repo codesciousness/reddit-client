@@ -1,68 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Reddit Client
 
-## Available Scripts
+Reddit Client is one of Codecademy's open-ended portfolio projects on the Full-Stack Engineer career path. For this project, we were instructed to problem solve and utilize other resources, instead of being provided with step-by-step guidance. The requirements were to utilize React and Redux to build an application displaying Reddit data that would allow users to view and search posts and comments provided by the Reddit API.
 
-In the project directory, you can run:
+The list of completed specifications for the application included:
 
-### `npm start`
+- Build the application using React and Redux
+- Version control the application with Git and host the repository on GitHub
+- Use a project management tool (GitHub Projects, Trello, etc.) to plan our work
+- Write a README (using Markdown) to document the project
+- Write unit tests for our components using Jest and Enzyme
+- Write end-to-end tests for the application
+- Make the application responsive on all device types (desktop, tablet and mobile)
+- Test the application's compatibility on all modern browsers
+- Provide users access to the application at a URL
+- Provide users an initial view of the app's data
+- Provide the ability for users to search the data using terms
+- Provide the ability for users to filter the data based on categories that are predefined
+- Provide users with a detail view (modal or new page/route) when an item is selected
+- Provide users with a cohesive design system, that includes animations and transitions
+- Provide the ability for users to leave an error state
+- Set up a CI/CD workflow to automatically deploy the application
+- Get 90+ scores on Lighthouse
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [Features](#features)
+- [Technologies](#technologies)
+- [Wireframes](#wireframes)
+- [Screenshots](#screenshots)
+- [Future Work](#future_work)
+- [Status](#status)
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I chose to implement a Reddit Science application that displays both trending and latest posts discussing new scientific research shared in the science community. I utilized GitHub Projects to organize and plan the stages of development for the application. The data returned by Reddit can be filtered using both the science topic filters and/or by search terms. Each post displays the science category that it was posted under, the title, author, time of creation, numbers of comments and a "Read more" link to the original article source. Additionally, users can click on the title of a post to be routed to a more detailed view that includes the post's comments. The application has responsive layout changes for all device types and is continously deployed via Netlify at [reddit-science.netlify.app](https://reddit-science.netlify.app/).
 
-### `npm run build`
+## Technologies
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was created with:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- JavaScript ES6
+- Node.js version: 14.15.1
+- Create React App version: 4.0.3
+- React version: 17.0.2
+- React Router version: 5.2.0
+- React Redux version: 7.2.3
+- Redux Toolkit version: 1.5.1
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Wireframes
 
-### `npm run eject`
+The application's wireframes were created utilizing Figma.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Reddit Client Wireframes Screen Recording](src/resources/images/reddit-client-wireframes-screen-recording.gif)
+![Reddit Client Wireframes](src/resources/images/reddit-client-wireframes.jpg)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Reddit Client Screen Recording](src/resources/images/reddit-client-screen-recording.gif)
+![Reddit Client Home Screenshot 1](src/resources/images/reddit-client-home-screenshot-1.jpg)
+![Reddit Client Home Screenshot 2](src/resources/images/reddit-client-home-screenshot-2.jpg)
+![Reddit Client Post Detail Screenshot](src/resources/images/reddit-client-post-detail-screenshot.jpg)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Future Work
 
-## Learn More
+Make the application a progressive web app.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Status
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is in progress.
