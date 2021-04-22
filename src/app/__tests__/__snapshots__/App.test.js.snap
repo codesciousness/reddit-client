@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App /> renders with initial state from Redux store 1`] = `
+exports[`<App /> matches the snapshot 1`] = `
 <div
   className="App"
 >

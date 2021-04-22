@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Comment /> matches the snapshot 1`] = `
+<section
+  className="Comment"
+  id="abcd1e"
+>
+  <p
+    className="Comment__author"
+  >
+    ScienceReader
+     | 
+    <span
+      data-testid="PostTime"
+    >
+      1 hour ago
+    </span>
+  </p>
+  <p
+    className="Comment__body"
+  >
+    Very informative article!
+  </p>
+  <p
+    className="Comment__ups"
+  >
+    <i
+      className="fas fa-arrow-up"
+    />
+     
+    10
+     Ups
+  </p>
+</section>
+`;

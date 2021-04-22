@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilterList /> matches the snapshot 1`] = `
+<section
+  className="FilterList"
+>
+  <h2
+    className="FilterList__title"
+  >
+    Your Daily Dose of Science
+  </h2>
+  <p
+    className="FilterList__prompt"
+  >
+    What interests you?
+  </p>
+  <ul
+    className="FilterList__container"
+  >
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+    <li>
+      <button>
+        Test Filter
+      </button>
+    </li>
+  </ul>
+</section>
+`;

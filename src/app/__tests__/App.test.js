@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { render, screen } from '@testing-library/react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import store from '../store';
 import App from '../App';
 
@@ -18,7 +18,7 @@ describe('<App />', () => {
     expect(screen.getByText('Reddit Science')).toBeInTheDocument();
   });
   test('matches the snapshot', () => {
-    const component = renderer.create(
+    const component = create(
       <Provider store={store}>
         <App />
       </Provider>
