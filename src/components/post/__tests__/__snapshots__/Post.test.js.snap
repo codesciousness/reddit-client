@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Post /> matches the latest post snapshot 1`] = `
+<section
+  className="Post__latest"
+>
+  <img
+    alt=""
+    className="Post__latest__image"
+    src="https://source.unsplash.com/140x140/?astronomy&sig=efgh2i"
+  />
+  <div
+    className="Post__latest__content"
+  >
+    <p
+      className="Post__latest__flair"
+    >
+      Astronomy
+    </p>
+    <a
+      className="Post__latest__link"
+      href="/posts/astronomy/efgh2i"
+      onClick={[Function]}
+    >
+      <h2
+        className="Post__latest__title"
+        id="efgh2i"
+        onClick={[Function]}
+      >
+        Where Can the Solar Eclipse be Viewed Next Week
+      </h2>
+    </a>
+    <a
+      href="https://www.sciencemag.org/"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <button
+        className="Post__latest__button"
+      >
+        Read more 
+        <i
+          className="fas fa-angle-double-right Post__latest__icon"
+        />
+      </button>
+    </a>
+    <p
+      className="Post__latest__detail"
+    >
+      <span
+        className="Post__latest__author"
+      >
+        Posted by 
+        <strong>
+          ScienceResearcher
+        </strong>
+      </span>
+      <span
+        data-testid="PostTime"
+      >
+        30 minutes ago
+      </span>
+      <span
+        className="Post__latest__comments"
+      >
+        <i
+          className="far fa-comment-alt"
+        />
+         
+        25
+      </span>
+    </p>
+  </div>
+</section>
+`;
+
+exports[`<Post /> matches the trending post snapshot 1`] = `
+<section
+  className="Post__trending"
+>
+  <img
+    alt=""
+    className="Post__trending__image"
+    src="https://source.unsplash.com/140x140/?astronomy&sig=efgh2i"
+  />
+  <div
+    className="Post__trending__content"
+  >
+    <h2
+      className="Post__trending__flair"
+    >
+      Astronomy
+    </h2>
+    <a
+      className="Post__trending__link"
+      href="/posts/astronomy/efgh2i"
+      onClick={[Function]}
+    >
+      <h3
+        className="Post__trending__title"
+        id="efgh2i"
+        onClick={[Function]}
+      >
+        Where Can the Solar Eclipse be Viewed...
+      </h3>
+    </a>
+  </div>
+</section>
+`;

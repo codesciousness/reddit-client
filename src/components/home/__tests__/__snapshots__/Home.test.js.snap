@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> matches the snapshot 1`] = `
+<main>
+  <form
+    data-testid="SearchTerm"
+  >
+    <input
+      placeholder="Test Search..."
+    />
+  </form>
+  <section
+    className="Home__trending"
+  >
+    <div
+      className="Home__divider__container"
+    >
+      <hr />
+      <div
+        className="Home__divider"
+      >
+        Trending
+      </div>
+    </div>
+    <section
+      data-testid="Posts__trending"
+    >
+      Test Trending Posts
+    </section>
+  </section>
+  <section
+    className="Home__latest"
+  >
+    <div
+      className="Home__divider__container"
+    >
+      <hr />
+      <div
+        className="Home__divider"
+      >
+        Latest
+      </div>
+    </div>
+    <section
+      data-testid="Posts__latest"
+    >
+      Test Latest Posts
+    </section>
+  </section>
+</main>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loader /> matches the snapshot 1`] = `
+<section
+  className="Loader"
+>
+  <div
+    className="Loader__1"
+  >
+    <div
+      className="Loader__2"
+    >
+      <div
+        className="Loader__3"
+      />
+    </div>
+  </div>
+</section>
+`;

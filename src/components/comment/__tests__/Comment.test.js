@@ -11,7 +11,7 @@ const comment = {
     ups: 10
 };
 
-jest.mock('../../postTime/PostTime', () => () => (<span data-testid="PostTime">{comment.created}</span>));
+jest.mock('../../postTime/PostTime');
 
 describe('<Comment />', () => {
     test('Comment component is defined', () => {
