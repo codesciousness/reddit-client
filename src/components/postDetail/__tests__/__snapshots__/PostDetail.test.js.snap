@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostDetail /> matches the snapshot 1`] = `
+<section
+  className="PostDetail"
+>
+  <section
+    className="Post__latest"
+  >
+    <img
+      alt=""
+      className="Post__latest__image"
+      src="https://source.unsplash.com/140x140/?health&sig=jklm3n"
+    />
+    <div
+      className="Post__latest__content"
+    >
+      <p
+        className="Post__latest__flair"
+      >
+        Health
+      </p>
+      <a
+        className="Post__latest__link"
+        href="/posts/health/jklm3n"
+        onClick={[Function]}
+      >
+        <h2
+          className="Post__latest__title"
+          id="jklm3n"
+          onClick={[Function]}
+        >
+          An Overview of Traditional Diets versus Modern Diets
+        </h2>
+      </a>
+      <a
+        href="https://www.nutrition.org/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <button
+          className="Post__latest__button"
+        >
+          Read more 
+          <i
+            className="fas fa-angle-double-right Post__latest__icon"
+          />
+        </button>
+      </a>
+      <p
+        className="Post__latest__detail"
+      >
+        <span
+          className="Post__latest__author"
+        >
+          Posted by 
+          <strong>
+            ScienceLover
+          </strong>
+        </span>
+        <span
+          className="PostTime"
+        >
+          NaN years ago
+        </span>
+        <span
+          className="Post__latest__comments"
+        >
+          <i
+            className="far fa-comment-alt"
+          />
+           
+          6
+        </span>
+      </p>
+    </div>
+  </section>
+  <div
+    data-testid="Comments"
+  >
+    Very informative article!
+    <p>
+      Posted By: ScienceReader
+    </p>
+  </div>
+</section>
+`;
