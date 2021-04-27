@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Comments /> matches the snapshot 1`] = `
+<section
+  className="Comments"
+>
+  <h3
+    className="Comments__title"
+  >
+    Comments
+  </h3>
+  <ul>
+    <li>
+      <section
+        className="Comment"
+        id="abcd0e"
+      >
+        <p
+          className="Comment__author"
+        >
+          ScienceReader
+           | 
+          <span
+            className="PostTime"
+          >
+            NaN years ago
+          </span>
+        </p>
+        <p
+          className="Comment__body"
+        >
+          Very informative article!
+        </p>
+        <p
+          className="Comment__ups"
+        >
+          <i
+            className="fas fa-arrow-up"
+          />
+           
+          10
+           Ups
+        </p>
+      </section>
+    </li>
+    <li>
+      <section
+        className="Comment"
+        id="fghi1j"
+      >
+        <p
+          className="Comment__author"
+        >
+          ScienceLearner
+           | 
+          <span
+            className="PostTime"
+          >
+            NaN years ago
+          </span>
+        </p>
+        <p
+          className="Comment__body"
+        >
+          Future research on this topic should definitely move more in this direction.
+        </p>
+        <p
+          className="Comment__ups"
+        >
+          <i
+            className="fas fa-arrow-up"
+          />
+           
+          1
+           Ups
+        </p>
+      </section>
+    </li>
+  </ul>
+</section>
+`;

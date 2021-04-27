@@ -14,3 +14,7 @@
 .Comments__icon {
     font-size: 1.5rem;
 }
+
+.Comments li {
+    list-style: none;
+}

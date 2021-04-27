@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Posts /> matches the snapshot when isTrending=false prop is passed 1`] = `
+<section
+  className="Posts__latest"
+>
+  <ul>
+    <li>
+      <section
+        className="Post__latest"
+      >
+        <img
+          alt=""
+          className="Post__latest__image"
+          src="https://source.unsplash.com/140x140/?biology&sig=opqr4s"
+        />
+        <div
+          className="Post__latest__content"
+        >
+          <p
+            className="Post__latest__flair"
+          >
+            Biology
+          </p>
+          <a
+            className="Post__latest__link"
+            href="/posts/biology/opqr4s"
+            onClick={[Function]}
+          >
+            <h2
+              className="Post__latest__title"
+              id="opqr4s"
+              onClick={[Function]}
+            >
+              Causes of Reproductive Stress on Animals in Declining Habitats
+            </h2>
+          </a>
+          <a
+            href="https://www.nature.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <button
+              className="Post__latest__button"
+            >
+              Read more 
+              <i
+                className="fas fa-angle-double-right Post__latest__icon"
+              />
+            </button>
+          </a>
+          <p
+            className="Post__latest__detail"
+          >
+            <span
+              className="Post__latest__author"
+            >
+              Posted by 
+              <strong>
+                ScienceGuy
+              </strong>
+            </span>
+            <span
+              className="PostTime"
+            >
+              NaN years ago
+            </span>
+            <span
+              className="Post__latest__comments"
+            >
+              <i
+                className="far fa-comment-alt"
+              />
+               
+              2
+            </span>
+          </p>
+        </div>
+      </section>
+    </li>
+    <li>
+      <section
+        className="Post__latest"
+      >
+        <img
+          alt=""
+          className="Post__latest__image"
+          src="https://source.unsplash.com/140x140/?neuroscience&sig=tuvw5x"
+        />
+        <div
+          className="Post__latest__content"
+        >
+          <p
+            className="Post__latest__flair"
+          >
+            Neuroscience
+          </p>
+          <a
+            className="Post__latest__link"
+            href="/posts/neuroscience/tuvw5x"
+            onClick={[Function]}
+          >
+            <h2
+              className="Post__latest__title"
+              id="tuvw5x"
+              onClick={[Function]}
+            >
+              Activation of the Brain in Subjects With High And Average Intelligence
+            </h2>
+          </a>
+          <a
+            href="https://www.jneurosci.org/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <button
+              className="Post__latest__button"
+            >
+              Read more 
+              <i
+                className="fas fa-angle-double-right Post__latest__icon"
+              />
+            </button>
+          </a>
+          <p
+            className="Post__latest__detail"
+          >
+            <span
+              className="Post__latest__author"
+            >
+              Posted by 
+              <strong>
+                ScienceObserver
+              </strong>
+            </span>
+            <span
+              className="PostTime"
+            >
+              NaN years ago
+            </span>
+            <span
+              className="Post__latest__comments"
+            >
+              <i
+                className="far fa-comment-alt"
+              />
+               
+              3
+            </span>
+          </p>
+        </div>
+      </section>
+    </li>
+  </ul>
+</section>
+`;
+
+exports[`<Posts /> matches the snapshot when isTrending=true prop is passed 1`] = `
+<section
+  className="Posts__trending"
+>
+  <ul>
+    <li>
+      <section
+        className="Post__trending"
+      >
+        <img
+          alt=""
+          className="Post__trending__image"
+          src="https://source.unsplash.com/140x140/?astronomy&sig=efgh2i"
+        />
+        <div
+          className="Post__trending__content"
+        >
+          <h2
+            className="Post__trending__flair"
+          >
+            Astronomy
+          </h2>
+          <a
+            className="Post__trending__link"
+            href="/posts/astronomy/efgh2i"
+            onClick={[Function]}
+          >
+            <h3
+              className="Post__trending__title"
+              id="efgh2i"
+              onClick={[Function]}
+            >
+              Where Can the Solar Eclipse be Viewed...
+            </h3>
+          </a>
+        </div>
+      </section>
+    </li>
+    <li>
+      <section
+        className="Post__trending"
+      >
+        <img
+          alt=""
+          className="Post__trending__image"
+          src="https://source.unsplash.com/140x140/?health&sig=jklm3n"
+        />
+        <div
+          className="Post__trending__content"
+        >
+          <h2
+            className="Post__trending__flair"
+          >
+            Health
+          </h2>
+          <a
+            className="Post__trending__link"
+            href="/posts/health/jklm3n"
+            onClick={[Function]}
+          >
+            <h3
+              className="Post__trending__title"
+              id="jklm3n"
+              onClick={[Function]}
+            >
+              An Overview of Traditional Diets versus Modern...
+            </h3>
+          </a>
+        </div>
+      </section>
+    </li>
+  </ul>
+</section>
+`;

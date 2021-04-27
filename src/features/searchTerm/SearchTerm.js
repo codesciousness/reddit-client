@@ -16,7 +16,7 @@ const SearchTerm = () => {
         <form className="SearchTerm">
             <i className="fas fa-search fa-lg SearchTerm__icon"></i>
             <input className="SearchTerm__input" placeholder="Search..." onChange={handleChange} value={searchTerm} />
-            {searchTerm && <i className="fas fa-times fa-lg SearchTerm__icon" onClick={handleClick}></i>}
+            {searchTerm && <i className="fas fa-times fa-lg SearchTerm__icon" onClick={handleClick} role="button"></i>}
         </form>
     );
 }

@@ -40,7 +40,9 @@ const Comments = () => {
     return (
         <section className="Comments">
             <h3 className="Comments__title">Comments</h3>
-            {comments.map(comment => <Comment comment={comment} />)}
+            <ul>
+                {comments.map(comment => <li key={comment.id}><Comment comment={comment} /></li>)}
+            </ul>
         </section>
     );
 }

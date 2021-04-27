@@ -9,8 +9,9 @@ import PostDetail from '../PostDetail';
 jest.mock('../../../features/comments/Comments', () => () => {
     return (
         <div data-testid="Comments">
-            Very informative article!
-            <p>Posted By: ScienceReader</p>
+            <p>Comments</p>
+            <p>Very informative article! | Posted By: ScienceReader</p>
+            <p>Future research on this topic should definitely move more in this direction. | Posted By: ScienceLearner</p>
         </div>
     );
 });
@@ -138,5 +139,7 @@ describe('<PostDetail />', () => {
             </Provider>
         );
         expect(screen.getByTestId('Comments')).toBeInTheDocument();
+        expect(screen.getByText(/Very informative article/)).toBeInTheDocument();
+        expect(screen.getByText(/ScienceLearner/)).toBeInTheDocument();
     });
 });

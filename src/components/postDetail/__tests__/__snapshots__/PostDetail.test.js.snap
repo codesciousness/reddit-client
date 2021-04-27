@@ -78,9 +78,14 @@ exports[`<PostDetail /> matches the snapshot 1`] = `
   <div
     data-testid="Comments"
   >
-    Very informative article!
     <p>
-      Posted By: ScienceReader
+      Comments
+    </p>
+    <p>
+      Very informative article! | Posted By: ScienceReader
+    </p>
+    <p>
+      Future research on this topic should definitely move more in this direction. | Posted By: ScienceLearner
     </p>
   </div>
 </section>

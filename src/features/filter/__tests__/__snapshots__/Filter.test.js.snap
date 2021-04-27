@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filter /> matches the snapshot 1`] = `
+<button
+  className="Filter__button"
+  id="Chemistry"
+  onClick={[Function]}
+>
+  Chemistry
+</button>
+`;
