@@ -43,7 +43,7 @@ const postsSlice = createSlice({
         loadingTrendingPosts: false,
         loadTrendingPostsError: false,
         loadingLatestPosts: false,
-        loadLatestPostsError: false,
+        loadLatestPostsError: false
     },
     reducers: {
         setCurrentPost: (state, action) => {

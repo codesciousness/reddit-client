@@ -19,7 +19,7 @@ const commentsSlice = createSlice({
     initialState: {
         comments: [],
         loadingComments: false,
-        loadCommentsError: false,
+        loadCommentsError: false
     },
     reducers: {},
     extraReducers: {
