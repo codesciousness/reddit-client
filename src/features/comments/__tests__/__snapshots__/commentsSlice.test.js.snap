@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`commentsReducer returns correct state when loadComments/fulfilled action is dispatched 1`] = `
+Object {
+  "comments": Array [
+    Object {
+      "author": "ScienceReader",
+      "body": "Very informative article!",
+      "created": 1618386788,
+      "id": "abcd0e",
+      "ups": 10,
+    },
+    Object {
+      "author": "ScienceLearner",
+      "body": "Future research on this topic should definitely move more in this direction.",
+      "created": 1618391145,
+      "id": "fghi1j",
+      "ups": 1,
+    },
+  ],
+  "loadCommentsError": false,
+  "loadingComments": false,
+}
+`;
+
+exports[`commentsReducer returns correct state when loadComments/pending action is dispatched 1`] = `
+Object {
+  "comments": Array [],
+  "loadCommentsError": false,
+  "loadingComments": true,
+}
+`;
+
+exports[`commentsReducer returns correct state when loadComments/rejected action is dispatched 1`] = `
+Object {
+  "comments": Array [],
+  "loadCommentsError": true,
+  "loadingComments": false,
+}
+`;

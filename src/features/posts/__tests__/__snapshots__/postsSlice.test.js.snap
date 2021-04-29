@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`postsReducer returns correct state when loadLatestPosts/fulfilled action is dispatched 1`] = `
+Object {
+  "currentPost": null,
+  "latestPosts": Array [
+    Object {
+      "author": "ScienceGuy",
+      "commentNum": 2,
+      "created": 1619644886,
+      "flair": "Biology",
+      "id": "opqr4s",
+      "thumbnail": "https://source.unsplash.com/140x140/?biology",
+      "title": "Causes of Reproductive Stress on Animals in Declining Habitats",
+      "url": "https://www.nature.com/",
+    },
+    Object {
+      "author": "ScienceObserver",
+      "commentNum": 3,
+      "created": 1619652318,
+      "flair": "Neuroscience",
+      "id": "tuvw5x",
+      "thumbnail": "https://source.unsplash.com/140x140/?neuroscience",
+      "title": "Activation of the Brain in Subjects With High And Average Intelligence",
+      "url": "https://www.jneurosci.org/",
+    },
+  ],
+  "loadLatestPostsError": false,
+  "loadTrendingPostsError": false,
+  "loadingLatestPosts": false,
+  "loadingTrendingPosts": false,
+  "trendingPosts": Array [],
+}
+`;
+
+exports[`postsReducer returns correct state when loadLatestPosts/pending action is dispatched 1`] = `
+Object {
+  "currentPost": null,
+  "latestPosts": Array [],
+  "loadLatestPostsError": false,
+  "loadTrendingPostsError": false,
+  "loadingLatestPosts": true,
+  "loadingTrendingPosts": false,
+  "trendingPosts": Array [],
+}
+`;
+
+exports[`postsReducer returns correct state when loadLatestPosts/rejected action is dispatched 1`] = `
+Object {
+  "currentPost": null,
+  "latestPosts": Array [],
+  "loadLatestPostsError": true,
+  "loadTrendingPostsError": false,
+  "loadingLatestPosts": false,
+  "loadingTrendingPosts": false,
+  "trendingPosts": Array [],
+}
+`;
+
+exports[`postsReducer returns correct state when loadTrendingPosts/fulfilled action is dispatched 1`] = `
+Object {
+  "currentPost": null,
+  "latestPosts": Array [],
+  "loadLatestPostsError": false,
+  "loadTrendingPostsError": false,
+  "loadingLatestPosts": false,
+  "loadingTrendingPosts": false,
+  "trendingPosts": Array [
+    Object {
+      "author": "ScienceResearcher",
+      "commentNum": 25,
+      "created": 1619644886,
+      "flair": "Astronomy",
+      "id": "efgh2i",
+      "thumbnail": "https://source.unsplash.com/140x140/?astronomy",
+      "title": "Where Can the Solar Eclipse be Viewed Next Week",
+      "url": "https://www.sciencemag.org/",
+    },
+    Object {
+      "author": "ScienceLover",
+      "commentNum": 6,
+      "created": 1619652318,
+      "flair": "Health",
+      "id": "jklm3n",
+      "thumbnail": "https://source.unsplash.com/140x140/?health",
+      "title": "An Overview of Traditional Diets Versus Modern Diets",
+      "url": "https://www.nutrition.org/",
+    },
+  ],
+}
+`;
+
+exports[`postsReducer returns correct state when loadTrendingPosts/pending action is dispatched 1`] = `
+Object {
+  "currentPost": null,
+  "latestPosts": Array [],
+  "loadLatestPostsError": false,
+  "loadTrendingPostsError": false,
+  "loadingLatestPosts": false,
+  "loadingTrendingPosts": true,
+  "trendingPosts": Array [],
+}
+`;
+
+exports[`postsReducer returns correct state when loadTrendingPosts/rejected action is dispatched 1`] = `
+Object {
+  "currentPost": null,
+  "latestPosts": Array [],
+  "loadLatestPostsError": false,
+  "loadTrendingPostsError": true,
+  "loadingLatestPosts": false,
+  "loadingTrendingPosts": false,
+  "trendingPosts": Array [],
+}
+`;
+
+exports[`postsReducer returns correct state when setCurrentPost action is dispatched 1`] = `
+Object {
+  "currentPost": "jklm3n",
+  "latestPosts": Array [],
+  "loadLatestPostsError": false,
+  "loadTrendingPostsError": false,
+  "loadingLatestPosts": false,
+  "loadingTrendingPosts": false,
+  "trendingPosts": Array [],
+}
+`;
