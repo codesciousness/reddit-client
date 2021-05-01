@@ -89,7 +89,7 @@ describe('<Comments />', () => {
         const expectedPayload = 'jklm3n';
         expect(dispatchedPayload).toBe(expectedPayload);
     });
-    test('renders a Loader component when loadingComments=true', () => {
+    test('renders 2 CommentLoader components when loadingComments=true', () => {
         store = mockStore({
             posts: {
                 currentPost: 'jklm3n'
@@ -107,7 +107,7 @@ describe('<Comments />', () => {
                 </Router>
             </Provider>
         );
-        expect(container.querySelector('.Loader')).toBeInTheDocument();
+        expect(container.querySelectorAll('.CommentLoader')).toHaveLength(2);
     });
     test('renders error message when loadCommentsError=true', () => {
         store = mockStore({

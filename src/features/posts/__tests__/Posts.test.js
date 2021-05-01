@@ -209,7 +209,7 @@ describe('<Posts />', () => {
         const expected = ['posts/loadTrendingPosts/pending', 'posts/loadLatestPosts/pending', 'posts/loadTrendingPosts/pending', 'posts/loadLatestPosts/pending'];
         expect(dispatched).toEqual(expected);
     });
-    test('renders a Loader component under trending posts when loadingTrendingPosts=true', () => {
+    test('renders 5 trending PostLoader components under trending posts when loadingTrendingPosts=true', () => {
         store = mockStore({
             filter: '',
             searchTerm: '',
@@ -230,9 +230,9 @@ describe('<Posts />', () => {
             </Provider>
         );
         expect(container.querySelector('.Posts__trending')).toBeInTheDocument();
-        expect(container.querySelector('.Loader')).toBeInTheDocument();
+        expect(container.querySelectorAll('.PostLoader__trending')).toHaveLength(5);
     });
-    test('renders a Loader component under latest posts when loadingLatestPosts=true', () => {
+    test('renders 5 latest PostLoader components under latest posts when loadingLatestPosts=true', () => {
         store = mockStore({
             filter: '',
             searchTerm: '',
@@ -253,7 +253,7 @@ describe('<Posts />', () => {
             </Provider>
         );
         expect(container.querySelector('.Posts__latest')).toBeInTheDocument();
-        expect(container.querySelector('.Loader')).toBeInTheDocument();
+        expect(container.querySelectorAll('.PostLoader__latest')).toHaveLength(5);
     });
     test('renders error message under trending posts when loadTrendingPostsError=true', () => {
         store = mockStore({

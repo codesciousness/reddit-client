@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Comments.css';
 import Comment from '../../components/comment/Comment';
-import Loader from '../../components/loader/Loader';
+import CommentLoader from '../../components/commentLoader/CommentLoader';
 import { selectCurrentPost } from '../posts/postsSlice';
 import { selectComments, selectLoadingComments, selectLoadCommentsError, loadComments } from './commentsSlice';
 
@@ -23,8 +23,9 @@ const Comments = () => {
     if (loadingComments) {
         return (
             <section className="Comments">
-                <h3 className="Comments__title">Comments</h3>
-                <Loader />
+                <h3 className="Comments__title">Comments Loading...</h3>
+                <CommentLoader />
+                <CommentLoader />
             </section>
         );
     }

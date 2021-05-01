@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './Posts.css';
 import Post from '../../components/post/Post';
-import Loader from '../../components/loader/Loader';
+import PostLoader from '../../components/postLoader/PostLoader';
 import { selectSearchTerm } from '../searchTerm/searchTermSlice';
 import { selectFilter } from '../filter/filterSlice';
 import { selectFilteredTrendingPosts,
@@ -34,7 +34,13 @@ const Posts = ({ isTrending }) => {
         if (loadingTrendingPosts) {
             return (
                 <section className="Posts__trending">
-                    <Loader />
+                    <ul>
+                        <li key="1"><PostLoader isTrending={true} /></li>
+                        <li key="2"><PostLoader isTrending={true} /></li>
+                        <li key="3"><PostLoader isTrending={true} /></li>
+                        <li key="4"><PostLoader isTrending={true} /></li>
+                        <li key="5"><PostLoader isTrending={true} /></li>
+                    </ul>
                 </section>
             );
         }
@@ -57,15 +63,21 @@ const Posts = ({ isTrending }) => {
         if (loadingLatestPosts) {
             return (
                 <section className="Posts__latest">
-                    <Loader />
-                </section> 
+                    <ul>
+                        <li key="1"><PostLoader isTrending={false}/></li>
+                        <li key="2"><PostLoader isTrending={false}/></li>
+                        <li key="3"><PostLoader isTrending={false}/></li>
+                        <li key="4"><PostLoader isTrending={false}/></li>
+                        <li key="5"><PostLoader isTrending={false}/></li>
+                    </ul>
+                </section>
             );
         }
         if (loadLatestPostsError) {
             return (
                 <section className="Posts__latest">
                     <p className="Posts__latest__error">Error: Request failed! Please try again. ¯\_(ツ)_/¯</p>
-                </section> 
+                </section>
             );
         }
         return (
@@ -73,7 +85,7 @@ const Posts = ({ isTrending }) => {
                 <ul>
                     {latestPosts.map(post => <li key={post.id}><Post post={post} isTrending={false} /></li>)}
                 </ul>
-            </section> 
+            </section>
         );
     }
 }
