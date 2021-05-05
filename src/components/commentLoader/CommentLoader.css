@@ -10,24 +10,36 @@
     margin: 0.5rem 0;
 }
 
-.CommentLoader__author strong {
+.CommentLoader__author strong,
+.CommentLoader__body,
+.CommentLoader__ups {
     color:lightgray;
     background: lightgray;
     border-radius: 5px;
     opacity: 0.7;
-}
-
-.CommentLoader__body {
-    color:lightgray;
-    background: lightgray;
-    border-radius: 5px;
-    opacity: 0.7;
+    position: relative;
     overflow: hidden;
 }
 
-.CommentLoader__ups strong {
-    color:lightgray;
-    background: lightgray;
+.CommentLoader__author strong::before,
+.CommentLoader__body::before,
+.CommentLoader__ups::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%);
+    background-size: 300% 100%;
     border-radius: 5px;
-    opacity: 0.7;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    from {
+        background-position: 0 0;
+    }
+    to   {
+        background-position: 100% 0;
+    }
 }

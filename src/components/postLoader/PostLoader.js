@@ -19,11 +19,10 @@ const PostLoader = ({ isTrending }) => {
                 <div className="PostLoader__latest__content">
                     <p className="PostLoader__latest__flair">Post flair name</p>
                     <h2 className="PostLoader__latest__title">Complete title of the article</h2>
-                    <button className="PostLoader__latest__button">Read more</button>
                     <p className="PostLoader__latest__detail">
-                        <span className="PostLoader__latest__author">Posted by <strong>Post author</strong></span>
+                        <span className="PostLoader__latest__author">Post author</span>
                         <span className="PostLoader__latest__time">Post time</span>
-                        <span className="PostLoader__latest__comments"><i className="far fa-comment-alt"></i> <strong>Comment#</strong></span>
+                        <span className="PostLoader__latest__comments">Comment#</span>
                     </p>
                 </div>
             </section>

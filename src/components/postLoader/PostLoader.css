@@ -24,23 +24,37 @@
 
 .PostLoader__trending__flair {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
     text-transform: uppercase;
-    color:lightgray;
-    background: lightgray;
-    border-radius: 5px;
     margin-bottom: 1rem;
-    padding: 0.25rem 0.5rem;
-    opacity: 0.7;
 }
 
 .PostLoader__trending__title {
     font-size: 1.25rem;
+}
+
+.PostLoader__trending__flair,
+.PostLoader__trending__title {
     color:lightgray;
     background: lightgray;
     border-radius: 5px;
     opacity: 0.7;
+    position: relative;
+    overflow: hidden;
+}
+
+.PostLoader__trending__flair::before,
+.PostLoader__trending__title::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%);
+    background-size: 300% 100%;
+    border-radius: 5px;
+    animation: loading 1s infinite;
 }
 
 .PostLoader__latest {
@@ -56,12 +70,12 @@
 }
 
 .PostLoader__latest__image {
+    position: absolute;
     height: 140px;
     width: 140px;
-    background: white;
+    background: lightgray;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(145, 145, 165, 0.6);
-    position: absolute;
     left: -64px;
     opacity: 0.9;
     transition: all 0.3s linear 0.1s;
@@ -69,12 +83,14 @@
 
 .PostLoader__latest__image::before {
     content: '';
+    position: absolute;
     width: 100%;
     height: 100%;
-    background: lightgray;
+    background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%);
+    background-size: 300% 100%;
     border-radius: 20px;
-    position: absolute;
     z-index: 1;
+    animation: loading 1s infinite;
 }
 
 .PostLoader__latest__content {
@@ -85,38 +101,15 @@
 
 .PostLoader__latest__flair {
     display: inline-block;
+    font-size: 1.25rem;
     font-weight: bold;
     text-transform: uppercase;
-    color:lightgray;
-    background: lightgray;
-    border-radius: 5px;
-    padding: 0.25rem 0.5rem;
-    margin: 0.5rem;
-    opacity: 0.7;
+    margin: 1rem auto 0.5rem auto;
 }
 
 .PostLoader__latest__title {
-    font-size: 1.5rem;
-    color:lightgray;
-    background: lightgray;
-    border-radius: 5px;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
-    opacity: 0.7;
-}
-
-.PostLoader__latest__button {
-    font-family: 'Asap', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    color:lightgray;
-    background: lightgray;
-    background-size: 300% 100%;
-    border-radius: 50px;
-    margin: 0 0.5rem 0.5rem 0.5rem;
-    padding: 0.75rem 1.5rem;
-    opacity: 0.7;
-    transition: all 0.4s ease-in-out;
 }
 
 .PostLoader__latest__detail {
@@ -127,25 +120,42 @@
     margin: 0.5rem 2rem;
 }
 
-.PostLoader__latest__author strong {
+.PostLoader__latest__flair,
+.PostLoader__latest__title,
+.PostLoader__latest__author,
+.PostLoader__latest__time,
+.PostLoader__latest__comments{
     color:lightgray;
     background: lightgray;
     border-radius: 5px;
     opacity: 0.7;
+    position: relative;
+    overflow: hidden;
 }
 
-.PostLoader__latest__time {
-    color:lightgray;
-    background: lightgray;
+.PostLoader__latest__flair::before,
+.PostLoader__latest__title::before,
+.PostLoader__latest__author::before,
+.PostLoader__latest__time::before,
+.PostLoader__latest__comments::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%);
+    background-size: 300% 100%;
     border-radius: 5px;
-    opacity: 0.7;
+    animation: loading 1s infinite;
 }
 
-.PostLoader__latest__comments strong {
-    color:lightgray;
-    background: lightgray;
-    border-radius: 5px;
-    opacity: 0.7;
+@keyframes loading {
+    from {
+        background-position: 0 0;
+    }
+    to   {
+        background-position: 100% 0;
+    }
 }
 
 /* Media Queries */
