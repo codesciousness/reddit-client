@@ -110,7 +110,7 @@
     background: lightgray;
     border-radius: 5px;
     padding: 0.25rem 0.5rem;
-    margin: 0.5rem;
+    margin: 0.5rem 0 0.75rem 0;
 }
 
 .Post__latest__link {
@@ -137,7 +137,7 @@
     background-size: 300% 100%;
     border-radius: 50px;
     box-shadow: 0 5px 10px rgba(242, 97, 170, 0.6);
-    margin: 0 0.5rem 0.5rem 0.5rem;
+    margin-bottom: 0.75rem;
     padding: 0.75rem 1.5rem;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
@@ -156,11 +156,11 @@
 }
 
 .Post__latest__detail {
-    margin-top: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 .Post__latest__detail span {
-    margin: 0.5rem 2rem;
+    margin: 0.5rem 2rem 0.5rem 0;
 }
 
 .Post__latest__author strong {
@@ -180,13 +180,13 @@
     }
 
     .Post__latest__image {
-        top: -75px;
+        top: -85px;
         left: 50%;
         transform: translateX(-50%);
     }
     
     .Post__latest__image:hover {
-        top: -80px;
+        top: -90px;
         left: 50%;
         transform: translateX(-50%);
     }
